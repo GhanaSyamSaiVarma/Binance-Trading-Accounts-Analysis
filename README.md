@@ -55,8 +55,6 @@ The goal is to calculate key metrics for each account, rank them, and identify t
 
 ---
 
----
-
 ### Additional Notes
 - **Win Positions**: The number of trades with positive realized profit.
 - **Position Identification**:
