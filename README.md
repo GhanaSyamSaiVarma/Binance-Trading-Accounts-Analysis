@@ -20,22 +20,7 @@ This project provides a detailed analysis of trade data, including ROI (Return o
 
 ---
 
-## Workflow Overview
 
-### 1. Importing the Dataset
-The project starts by importing a CSV dataset of trade data.
-
-```python
-import pandas as pd
-df = pd.read_csv('BINANCE_TRADES_ROI_DATA.csv', on_bad_lines='skip')
-
----
-
-### 2. Data Preprocessing
-The trade history is cleaned, and invalid rows are dropped. Nested JSON-like structures in the `Trade_History` column are parsed for further analysis.
-
-```python
-import ast
 
 # Drop rows with missing 'Trade_History' values
 df_clean = df.dropna(subset=['Trade_History'])
